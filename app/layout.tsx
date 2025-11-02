@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Suspense } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import LOADER from './tsx/layout/LOADER';
 import SCROLLBAR from './tsx/layout/SCROLLBAR';
 import NAVBAR from './tsx/layout/NAVBAR';
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NAVBAR />
         <main>{children}</main>
         <FOOTER />
+        <SpeedInsights />
       </body>
     </html>
   );
