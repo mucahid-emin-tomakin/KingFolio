@@ -1,0 +1,87 @@
+/* -------------------------------- LOADER -------------------------------- */
+body.loading {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;}
+.Kingfolio-wrapper{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 1);}
+.Kingfolio-wrapper .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}
+.Kingfolio{
+    position: absolute;
+    display: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 1666px);
+    z-index: 1;}
+.kingfolio svg{
+    width: 100%;
+    height: auto;
+    enableBackground: new 0 0 2252.9 1017.29;
+    animation: spin 2s linear infinite;}
+.st0{
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 3;
+    stroke-miterlimit: 10;}
+.Kingfolio path{
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 3700;
+    opacity: 10;
+    animation: KingfolioAnimate 3s cubic-bezier(0, 0.23, 1, .1);
+    animation-iteration-count: infinite;}
+@keyframes KingfolioAnimate{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dasharray: 0;}
+    10%{
+        opacity: 10;
+        fill: none;
+        stroke-dasharray: 0;}
+    20%{
+        fill: rgba(255, 255, 255, 0);}
+    30%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 3700;}
+    40%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 3700;}
+    50%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 3700;}
+    60%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 3700;}
+    70%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 3700;}
+    100%{
+        fill: rgba(255, 255, 255, 0);}}
+.Kingfolio .Kingfoliost0 path{
+    stroke-dasharray: 4000;}
+#map_canvas{
+    width: 100%; 
+    height: auto;}
+/* -------------------------------- LOADER -------------------------------- */

@@ -1,0 +1,235 @@
+/* -------------------------------- SKILLS -------------------------------- */
+.skills {
+    container-type: inline-size;
+    container-name: skills-section;}
+.skills .max-width { max-width: 90%; }
+.skills .title::after{
+    content: "what i know";}
+.skills .skills-content .column{
+    width: calc(50% - clamp(1rem, 3cqi, 1.375rem));}
+.skills .skills-content .left{
+    width: 75%;
+    align-items: center;}
+.skills .skills-content .left .text{
+    font-size: clamp(1.12rem, 3cqi, 2rem);
+    text-shadow: 
+        0px 0px 1px rgba(255,255,255,0.8),
+        0px 2px 4px rgba(0,0,0,0.1),
+        0px 4px 8px rgba(0,0,0,0.15),
+        0px 6px 12px rgba(0,0,0,0.2),
+        0px 8px 16px rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px);
+    font-weight: 600;
+    margin-bottom: clamp(0.5rem, 2cqi, 0.625rem);
+    color: darkorange;
+    padding-top: 0;
+    font-family: 'BlackChancery', sans-serif;
+    text-align: center;}
+.skills .skills-content .left p{
+    text-align: center;}
+.skills .skills-content .right{
+    margin-top: -11%;
+    margin-right: -5%;
+    width: 25%;}
+.skills .skills-content .right .bars{
+    display: flex;
+    min-height: 44px;
+    font-family: '';
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: clamp(0.75rem, 2cqi, 0.9375rem);}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: clamp(0.25rem, 1cqi, 0.3125rem);
+    align-items: center;
+    justify-content: space-between;}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5cqi, 1.125rem);}
+.skills .skills-content .right .line{
+    height: clamp(6px, 1.5cqi, 8px);
+    min-height: 6px;
+    width: 100%;
+    border-radius: 3px;
+    background: lightgrey;
+    position: relative;}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #ff073a, #ff3867, #ff073a);
+    box-shadow: 
+        0 0 1px #ff073a,
+        0 0 3px #ff073a,
+        0 0 5px #ff073a,
+        0 0 11px #ff073a,
+        inset 0 0 20px rgba(255, 7, 58, 0.5);
+    border-radius: 3px;
+    animation: cyber-glow 3s ease-in-out infinite;}
+@keyframes cyber-glow {
+    0%, 100% {
+        filter: hue-rotate(0deg) brightness(1.2);}
+    50% {
+        filter: hue-rotate(10deg) brightness(1.5);}}
+.skills-content .right .python::before { width: 80%; }
+.skills-content .right .rpa::before { width: 90%; }
+.skills-content .right .scripting::before { width: 85%; }
+.skills-content .right .web::before { width: 75%; }
+.skills-content .right .cpp::before { width: 70%; }
+.skills-content .right .linux::before { width: 80%; }
+.skills-content .right .ml::before { width: 70%; }
+.skills-content .right .sql::before { width: 60%; }
+.skills-content .right .devops::before { width: 70%; }
+.skills .skills-content .leftleft { margin: 0 !important;}
+.skills .skills-content .leftleft img{
+    float: left;
+    height: auto !important;
+    width: 1050px !important;
+    margin-top: 1rem !important;
+    margin-left: -17rem !important;
+    shape-outside: url(/webp/Gefreiter.webp);
+    shape-margin: 1rem;}
+.skills .skills-content .leftright{}
+.skills .skills-content .right .bars:focus-within {
+    outline: 2px solid #CC5500;
+    outline-offset: 2px;
+    border-radius: 4px;}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;}
+.img-down{
+    display: inline;
+    animation: zoom-in-zoom-out 2s ease infinite;}
+.img-top{
+    display: none;
+    animation: zoom-in-zoom-out 2s ease infinite;}
+@keyframes zoom-in-zoom-out{
+    0%{
+        transform: rotate(-0.1deg) scale(1, 1);}
+    50%{
+        transform: rotate(0.1deg) scale(0.97, 0.97);}
+    100%{
+        transform: rotate(-0.1deg) scale(1, 1);}}
+#downtop:hover .img-top{
+    display: inline;}
+#downtop:hover .img-down{
+    display: none;}
+@container skills-section (width < 1300px) {
+    .skills .skills-content .right{
+        margin-top: 0%;}
+    .skills .skills-content .left .leftright{
+        margin-top: 0%;}
+    .skills .skills-content .leftleft img {
+        width: 100% !important;
+        margin-top: 10rem !important;
+        margin-left: -13rem !important;}}
+@container skills-section (width < 1210px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 8rem !important;
+        margin-left: -10rem !important;}
+    .skills .skills-content .left p{
+        font-size: clamp(0.89rem, 3cqi, 0.89rem);}}
+@container skills-section (width < 1125px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 8rem !important;
+        margin-left: -10rem !important;}}
+@container skills-section (width < 1101px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 7rem !important;
+        margin-left: -9rem !important;}}
+@container skills-section (width < 1100px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 8rem !important;
+        margin-left: -8rem !important;}
+    .skills .skills-content .left p{
+        font-size: clamp(0.9rem, 3cqi, 0.9rem);}}
+@container skills-section (width < 1070px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 10rem !important;
+        margin-left: -8rem !important;}}
+@container skills-section (width < 991px) {
+    .max-width { max-width: 95%; }
+    .skills .skills-content .leftleft img {
+        margin-top: 11rem !important;
+        margin-left: -7rem !important;}}
+@container skills-section (width < 950px) {
+    .skills .skills-content .column { width: 100%; }
+    .skills .skills-content .right{
+        padding: 0 5%; }
+    .skills .skills-content .left p { 
+        text-align: left;}
+    .skills .skills-content .leftleft img {
+        margin-top: 6rem !important;
+        margin-left: -6rem !important;}}
+@container skills-section (width < 850px) {
+    .skills .skills-content .right{
+        margin-top: 0; }
+    .skills .skills-content .right .bars {
+        min-height: 48px;}
+    .skills .skills-content .right .info {
+        flex-wrap: wrap;}
+    .skills .skills-content .left{
+        margin: 0 !important;
+        padding: 0 5%; }
+    .skills .skills-content .leftleft img {
+        margin-top: 10rem !important;
+        margin-left: -7rem !important;}}
+@container skills-section (width < 750px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 11rem !important;
+        margin-left: -6rem !important;}}
+@container skills-section (width < 700px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 15rem !important;
+        margin-left: -6rem !important;}}
+@container skills-section (width < 600px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 20rem !important;
+        margin-left: -5rem !important;}}
+@container skills-section (width < 500px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 24rem !important;
+        margin-left: -4rem !important;}}
+@container skills-section (width < 450px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 25rem !important;
+        margin-left: -4rem !important;}}
+@container skills-section (width < 435px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 29rem !important;
+        margin-left: -4rem !important;}}
+@container skills-section (width < 400px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 30rem !important;
+        margin-left: -3rem !important;}}
+@container skills-section (width < 385px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 31rem !important;
+        margin-left: -3rem !important;}}
+@container skills-section (width < 365px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 32rem !important;
+        margin-left: -3rem !important;}}
+@container skills-section (width < 340px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 34rem !important;
+        margin-left: -3rem !important;}}
+@container skills-section (width < 330px) {
+    .skills .skills-content .leftleft img {
+        margin-top: 37rem !important;
+        margin-left: -3rem !important;}}
+@media (prefers-reduced-motion: reduce) {
+    .img-down, .img-top {
+        animation: none;}
+@keyframes zoom-in-zoom-out {
+    transform: none;}}
+/* -------------------------------- SKILLS -------------------------------- */

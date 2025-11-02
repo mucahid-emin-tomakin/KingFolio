@@ -1,0 +1,427 @@
+/* -------------------------------- PROJECTS -------------------------------- */
+:root {
+  --electric-border-color: #dd8448;
+  --electric-light-color: #ff9d5c;}
+::-webkit-scrollbar {
+    width: 10px;}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 25px;}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;}
+.projects html{
+    scroll-behavior: smooth;}
+.projects svg {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;}
+.projects {
+    container-type: inline-size;
+    container-name: projects-section;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    color: #fff;
+    height: 100vh;
+    min-height: 100vh;
+    isolation: isolate;
+    position: relative;
+    overflow: hidden;
+    font-family: 'BlackChancery', sans-serif;
+    transition: height 0.6s ease, min-height 0.6s ease;}
+.projects.is-pinned {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    min-height: 100vh;}
+.projects.is-pinned ~ section, .projects.is-pinned ~ footer {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    overflow: hidden !important;}
+.projects.is-pinned ~ footer {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;}
+.projects .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;}
+.projects-title-section {
+    padding: 2rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 20;
+    transition: opacity 0.8s ease;}
+.projects-animation-section {
+    display: block !important;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;}
+.projects.is-pinned .projects-animation-section {
+    opacity: 1;}
+.projects-scroll-container{
+    position: relative;
+    overflow-y: visible;
+    overflow-x: hidden;
+    height: auto;
+    scroll-snap-type: y mandatory; /*proximity*/
+    scroll-behavior: smooth;
+    transition: height 0.6s ease;}
+.projects.is-pinned .projects-scroll-container {
+    height: 100vh;
+    overflow-y: auto;}
+.projects-sticky-section{
+    min-height: auto;
+    position: relative;
+    transition: min-height 0.6s ease;}
+.projects.is-pinned .projects-sticky-section {
+    min-height: 100vh;}
+.projects-inner-scroll{
+    position: relative;}
+.projects .title::before{
+    background: #fff;}
+.projects .title::after{
+    background: #111;
+    content: "what i provide";}
+.projects .projects-content {
+    display: grid;}
+.projects .projects-content img{
+    display: block;
+    float: right;
+    bottom: 0px;
+    right: 0px;
+    width: min(35%, 400px);
+    height: auto;}
+.projects-scroll-content{
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - clamp(120px, 25cqi, 200px));
+    padding: clamp(1rem, 3cqi, 1.25rem) 0;
+    scrollbar-width: thin;
+    scrollbar-color: greenyellow #111;}
+.projects-scroll-content::-webkit-scrollbar{
+    width: 8px;}
+.projects-scroll-content::-webkit-scrollbar-track{
+    background: #111;}
+.projects-scroll-content::-webkit-scrollbar-thumb{
+    background: greenyellow;
+    border-radius: 4px;}
+.projects-scroll-content::-webkit-scrollbar-thumb:hover{
+    background: #a8e04e;}
+#app {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none;}
+#app img, .imgBox {
+    pointer-events: auto !important;}
+#app > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;}
+#scrollDist {
+    width: 100%;
+    height: 100vh;
+    position: relative;}
+#app img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;}
+.image-caption {
+    position: absolute;
+    bottom: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    opacity: 1;
+    opacity: 0;
+    text-align: center;
+    white-space: nowrap;
+    font-size: clamp(8rem, 8cqi, 8rem);
+    text-shadow: 
+        0 0 1px #fff,
+        0 0 11px #fff,
+        0 0 22px #fff,
+        0 0 33px #fff;
+    background: rgba(0,0,0,0);
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    letter-spacing: 1.5px;}
+.image-wrapper {
+    pointer-events: none !important;
+    position: absolute !important;
+    transform-style: preserve-3d;
+    opacity: 1;}
+.imgBox {
+    pointer-events: auto !important;
+    position: relative;
+    transform-style: preserve-3d;
+    opacity: 1;}
+#imgGroup {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;}
+#imgGroup img {
+    border-radius: 22px;}
+.imgBox, .imgBox img, .image-caption, .image-wrapper {
+    opacity: 1;}
+.project-card img, .project-image img, .image-wrapper img {
+    border-radius: 22px;}
+#headlines {
+    max-width: auto;
+    min-width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);overflow: visible !important;
+    clip-path: none !important;
+    clip: auto !important;}
+.text-border-container {
+    position: relative;
+    width: min(90%, 800px);
+    max-width: 95vw;
+    margin: 1rem auto;}
+.animated-border {
+    border-radius: 33px;
+    padding: 2rem;
+    background: transparent;
+    position: relative;}
+.border-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--electric-border-color);
+    border-radius: 33px;
+    filter: url(#turbulent-displace);
+    pointer-events: none;}
+.blitz-effect {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 0px solid var(--electric-light-color);
+    border-radius: 16px;
+    filter: blur(1px);
+    opacity: 0.8;
+    pointer-events: none;
+    animation: blitzPulse 2s ease-in-out infinite;}
+.wave-effect {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid rgba(255, 157, 92, 0.4);
+    border-radius: 16px;
+    filter: blur(3px);
+    pointer-events: none;
+    animation: waveMove 3s linear infinite;}
+@keyframes blitzPulse {
+    0%, 100% {
+        opacity: 0.3;
+        filter: blur(1px);}
+    50% {
+        opacity: 0.8;
+        filter: blur(2px);}}
+@keyframes waveMove {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;}
+    50% {
+        transform: scale(1.02);
+        opacity: 0.6;}
+    100% {
+        transform: scale(1);
+        opacity: 0.3;}}
+.text-content {
+    position: relative;
+    z-index: 11;}
+#detailImg {
+    width: min(80%, 1000px);
+    height: min(60%, 600px);
+    border-radius: 22px;
+    overflow: hidden;
+    margin-bottom: -1rem;
+    max-width: 90vw !important;
+    max-height: 60vh !important;
+    background-size: contain !important;
+    background-position: center;
+    background-repeat: no-repeat;}
+#detail {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;}
+#detailTxt {
+    color: #fff;
+    font-size: clamp(1rem, 2cqi, 1.3rem);
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-shadow: 
+        0 0 1px #fff,
+        0 0 11px #fff,
+        0 0 22px #fff,
+        0 0 33px #fff;}
+.pdf-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6.6px);    
+    -webkit-backdrop-filter: blur(6.6px);
+    z-index: 1;
+    animation: fadeIn 0.3s ease;}
+.pdf-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000 !important;}
+.pdf-popup {
+    position: relative;
+    isolation: isolate;
+    width: 85%;
+    height: 85%;
+    z-index: 1001 !important;
+    background: transparent;
+    border-radius: 12px;
+    animation: slideIn 0.4s cubic-bezier(.31,.25,.50,1.50);
+    overflow: visible;}
+.pdf-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;}
+.pdf-iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    border-radius: 8px !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    overflow: auto !important;
+    z-index: 1 !important;}
+.pdf-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.5rem;
+    right: 0;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1002 !important;}
+.pdf-close-btn:hover {
+    background: #ff3867;
+    transform: scale(1.1);}
+body.show-pdf .logo,
+body.show-pdf .logo a,
+body.show-pdf .nav-but-wrap,
+body.show-pdf .menu-icon,
+body.show-pdf .menu-icon__line {
+    filter: blur(6.6px) !important;
+    pointer-events: none !important;}
+body.show-pdf header,
+body.show-pdf .cd-header,
+body.show-pdf .header-wrapper {
+    filter: none !important;
+    pointer-events: auto !important;}
+body.show-pdf {
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;}
+html.show-pdf {
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;}
+@container projects-section (width < 768px) {
+    #headlines {
+        width: 600px;
+        height: 120px;}
+    .text-border-container {
+        width: 95%;}
+    .animated-border {
+        padding: 1.5rem;}
+    #detailImg {
+        margin-bottom: -4rem;}
+    #detailTxt {
+        font-size: clamp(0.9rem, 1.5cqi, 1.1rem);}}
+@container projects-section (width < 480px) {
+    #headlines {
+        width: 450px;
+        height: 100px;}
+    #detail {
+        padding: 1rem;
+        gap: 1.5rem;}
+    .text-border-container {
+        width: 98%;}
+    .animated-border {
+        padding: 1rem;}
+    #detailImg {
+        margin-bottom: -6rem;
+        width: 95%;
+        height: 50%;}
+    #detailTxt {
+        font-size: 0.875rem;}}
+/* -------------------------------- PROJECTS -------------------------------- */

@@ -1,0 +1,195 @@
+/* -------------------------------- HOME -------------------------------- */
+.home{
+    container-type: inline-size;
+    container-name: home-section;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: height 0.5s ease;}
+.home .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;}
+.home .max-width{
+    width: 100% !important;
+    display: flex;
+    padding: 0 5%;
+    margin: auto;}
+.home .home-content{
+    width: 100% !important;}
+.home .home-content .a{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;}
+.home .home-content .a:hover{
+    color: orange;
+    animation-name: rubberBand;}
+@keyframes rubberBand{
+    from{
+        transform: scale3d(1, 1, 1);}
+    30%{
+        transform: scale3d(1.25, 0.75, 1);}
+    40%{
+        transform: scale3d(0.75, 1.25, 1);}
+    50%{
+        transform: scale3d(1.15, 0.85, 1);}
+    65%{
+        transform: scale3d(.95, 1.05, 1);}
+    75%{
+        transform: scale3d(1.05, .95, 1); }
+    to{
+        transform: scale3d(1, 1, 1);}} 
+.home .home-content .text-1{
+    margin-left: 15%;
+    font-size: clamp(2rem, 4cqi, 5rem);;
+    font-family: 'Adine Kirnberg';}
+.home .home-content .text-2{
+    transform: translateX(11%);
+    display: inline-block;
+    weight: 100%;
+    font-size: min(11rem, max(5rem, 11cqi));
+    font-weight: 700;
+    white-space: nowrap;}
+.home .home-content .text-2 h3, .home .home-content .text-2 h4, .home .home-content .text-2 h5 {
+    text-align: center;
+    font-size: min(8.8rem, max(3rem, 8.8cqi));
+    font-family: Old English Text MT;
+    white-space: nowrap;}
+.home .home-content .text-2 h4 {
+    transform: translateX(3%);}
+.home .home-content .text-2 h5 {
+    transform: translateX(12%);}
+@container home-section (width < 600px) {
+    .home .home-content .text-1{
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align: center;}
+    .home .home-content .text-2 {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 66px;
+        width: 100%;
+        transform: translateX(0%);
+        font-size: 4rem !important;
+        gap: 0.3rem;}
+    .home .home-content .text-2 h3, .home .home-content .text-2 h4, .home .home-content .text-2 h5 {
+        transform: translateX(0%);
+        white-space: normal !important;
+        text-align: center;
+        margin: 0;
+        width: 100%;}
+    .home .home-content .text-2 h3 {
+        margin-right: min(30%);}
+    .home .home-content .text-2 h5 {
+        margin-left: min(35%);}
+    .home .home-content .buttonBlack {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;}}
+@container home-section (width < 550px) {
+    .home .home-content .text-2 h3 {
+        margin-right: min(35%);}
+    .home .home-content .text-2 h5 {
+        margin-left: min(40%);}}
+@container home-section (width < 500px) {
+    .home .home-content .text-2 h5 {
+        margin-left: min(45%);}}
+@container home-section (width < 450px) {
+    .home .home-content .text-2 h5 {
+        margin-left: min(50%);}}
+@container home-section (width < 400px) {
+    .home .home-content .text-2 h5 {
+        margin-left: min(55%);}}
+@container home-section (width < 300px) {
+    .home .home-content .text-2 h3, .home .home-content .text-2 h4, .home .home-content .text-2 h5 {
+        text-align: center !important;
+        margin: 0 auto !important;}}
+    .buttonBlack a{
+        position: relative;
+        display: inline-block;
+        padding: clamp(0.5rem, 3cqi, 0.75rem) clamp(1.5rem, 5cqi, 2.25rem);
+        border: 3px solid #0f0;
+        margin-top: clamp(1rem, 3cqi, 1.25rem);
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: min(2px, 0.3cqi);
+        color: #fff;
+        font-size: clamp(1rem, 4cqi, 1.5625rem);
+        border-radius: 7px;
+        transition: all 0.3s ease;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+        transition: 0.5s;
+        transition-delay: 0s;
+        filter: hue-rotate(260deg);}
+    .buttonBlack a:hover{
+        transition-delay: 1.5s;
+        color: #000;
+        box-shadow: 0 0 10px #0f0,
+                    0 0 20px #0f0,
+                    0 0 40px #0f0,
+                    0 0 80px #0f0,
+                    0 0 160px #0f0;}
+    .buttonBlack a span{
+        position: relative;
+        z-index: 100;}
+    .buttonBlack a:before{
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: clamp(15px, 3cqi, 20px);
+        height: 2px;
+        background: #0f0;
+        box-shadow: -5px -8px 0 #0f0,
+                    -5px 8px 0 #0f0;
+        transition: width 0.5s, left 0.5s, height 0.5s;
+        box-shadow: 0.5s;
+        transition-delay: 1s, 0.5s, 0s, 0s;}
+    .buttonBlack a:hover::before{
+        width: min(60%, 200px);
+        height: 100%;
+        left: -1px;
+        box-shadow: -5px 0 0 #0f0,
+                    -5px 0 0 #0f0;
+        transition-delay: 0s, 0.5s, 1s, 1s;}
+    .buttonBlack a:after{
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: clamp(15px, 3cqi, 20px);
+        height: 2px;
+        background: #0f0;
+        box-shadow: 5px -8px 0 #0f0,
+                    5px 8px 0 #0f0;
+        transition: width 0.5s, left 0.5s, height 0.5s;
+        box-shadow: 0.5s;
+        transition-delay: 1s, 0.5s, 0s, 0s;}
+    .buttonBlack a:hover::after{
+        width: min(60%, 200px);
+        height: 100%;
+        right: -1px;
+        box-shadow: 5px 0 0 #0f0,
+                    5px 0 0 #0f0;
+        transition-delay: 0s, 0.5s, 1s, 1s;}
+/* -------------------------------- HOME -------------------------------- */   

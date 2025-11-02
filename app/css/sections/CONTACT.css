@@ -1,0 +1,454 @@
+/* -------------------------------- CONTACT -------------------------------- */
+input[name="_honey"] {
+    display: none !important;
+    opacity: 0;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;}
+.contact {
+    container-type: inline-size;
+    container-name: contact-section;
+    padding: 5% 1%;}
+.contact .title{
+    padding-bottom: 0;}
+.contact .title::after {
+    content: "get in touch";}
+.contact .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    align-items: center;}
+.contact .contact-content .contact-item {
+    list-style: none;
+    margin: 0;}
+.contact .contact-content .fade-right {
+    text-align: center;}
+.contact .contact-content .column {
+    width: 100%;}
+.contact .contact-content .text {
+    font-size: clamp(1.37rem, 3cqi, 2rem);
+    font-weight: 600;
+    text-shadow: 
+        0px 0px 1px rgba(255,255,255,0.8),
+        0px 2px 4px rgba(0,0,0,0.1),
+        0px 4px 8px rgba(0,0,0,0.15),
+        0px 6px 12px rgba(0,0,0,0.2),
+        0px 8px 16px rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px);
+    color: darkred;
+    text-align: center;
+    margin-bottom: clamp(0.5rem, 2cqi, 0.625rem);}
+.contact .contact-content .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: clamp(1rem, 3cqi, 1.5rem);}
+.contact .contact-content .left .icons {
+    margin: clamp(0.5rem, 2cqi, 0.625rem) 0;}
+.contact .contact-content .row {
+    display: flex;
+    height: clamp(3rem, 8cqi, 4.0625rem);
+    align-items: center;
+    position: relative;}
+.contact .contact-content .row .info {
+    margin-left: clamp(1rem, 3cqi, 1.875rem);}
+.contact .contact-content .row i {
+    font-size: clamp(1.25rem, 4cqi, 1.5625rem);
+    color: red;}
+.contact .contact-content .info .head {
+    font-weight: 500;}
+.contact .contact-content .info .sub-title {
+    color: #333;}
+.contact .title, .contact .contact-content .text, .contact .contact-content .info .head {
+    font-family: 'BlackChancery', sans-serif;}
+.contact .right form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 3cqi, 1.5rem);
+    height: 100%;}
+.contact .right form .fields {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+    gap: clamp(0.5rem, 2cqi, 0.625rem)}
+.contact .right form .field {
+    display: flex;
+    flex-direction: column;}
+.contact .right form .field input, .contact .right form .textarea textarea{
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    outline: none;
+    padding: clamp(0.75rem, 2cqi, 1rem);
+    font-size: clamp(1rem, 3cqi, 1.125rem);
+    font-family: 'BlackChancery', sans-serif;
+    transition: all 0.3s ease;
+    background: #fafafa;}
+.contact .right form .field input {
+    height: clamp(2.5rem, 7cqi, 3rem);}
+.contact .right form .textarea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;}
+.contact .right form .textarea textarea {
+    padding-top: clamp(0.5rem, 2cqi, 0.625rem);
+    resize: none;flex: 1;
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.5;}
+.contact .right form .field input:focus, .contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1)}
+.contact .right form .button-area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;}
+.right form .button-area button{
+    color: #fff;
+    padding: clamp(0.75rem, 2cqi, 1rem) clamp(1.5rem, 4cqi, 2rem);
+    font-size: clamp(1rem, 3cqi, 1.125rem);
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    background: red;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+    min-width: 140px;}
+.right form .button-area button:hover{
+    color: red;
+    background: none;
+    transform: translateY(-2px);}
+.quote-author {
+    font-size: clamp(0.75rem, 3cqi, 0.875rem);
+    display: block;
+    text-align: right;
+    opacity: 0.8;}
+.neonred{
+    text-decoration: none;
+    color: crimson;
+    display: inline-block;
+    transition: 0.3s ease-out;}
+.neonred:hover{
+    background: crimson;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 10px crimson, 0 0 20px crimson, 0 0 40px crimson,
+    0 0 80px crimson, 0 0 160px crimson, 0 0 320px crimson, 0 0 640px crimson;}
+.glow-on-hover{
+    color:inherit; 
+    text-decoration:none;
+    width: min(220px, 60cqi);
+    height: clamp(2.5rem, 8cqi, 3.125rem);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;}
+.glow-on-hover:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 666%;
+    z-index: -1;
+    filter: blur(6px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 11px;}
+@keyframes glowing{
+    0%{
+        background-position: 0 0;}
+    50%{
+        background-position: 400% 0;}
+    100%{
+        background-position: 0 0;}}
+.glow-on-hover:active{
+    color: #000}
+.glow-on-hover:active:after{
+    background: transparent;}
+.glow-on-hover:hover:before{
+    opacity: 1;}
+.glow-on-hover:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;}
+.success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;}
+.page-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    z-index: 9998;
+    animation: fadeIn 0.3s ease;}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }}
+        .success-message {
+            position: relative;
+            width: min(320px, 90cqi);
+            background: white;
+            border-radius: 12px;
+            padding: clamp(2rem, 8cqi, 2.5rem) clamp(1.5rem, 6cqi, 1.875rem) clamp(1.5rem, 6cqi, 1.875rem);
+            text-align: center;
+            font-weight: 300;
+            color: #2c2928;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.4s cubic-bezier(.31,.25,.50,1.50);
+            z-index: 10000;
+            margin: 1rem;}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-60px) scale(0.9);}
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);}}
+.success-check {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: clamp(3.5rem, 14cqi, 4.375rem);
+    height: clamp(3.5rem, 14cqi, 4.375rem);
+    background: #71c341;
+    color: white;
+    font-size: clamp(1.5rem, 6cqi, 2.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: scaleCheck 0.4s 0.2s cubic-bezier(.31,.25,.50,1.50) both;
+    box-shadow: 0 1px 15px rgba(113, 195, 65, 0.1),
+                0 1px 15px rgba(113, 195, 65, 0.3),
+                0 1px 15px rgba(113, 195, 65, 0.5),
+                0 1px 15px rgba(113, 195, 65, 0.9);}
+@keyframes scaleCheck {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;}
+    70% {
+        transform: translate(-50%, -50%) scale(1.2);}
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;}}
+.success-title {
+    font-size: clamp(1.5rem, 6cqi, 2.2rem);
+    margin: clamp(2.5rem, 10cqi, 3.125rem) 0px clamp(0.75rem, 3cqi, 0.9375rem) 0px;
+    font-weight: 600;
+    color: #71c341;
+    text-shadow: 
+        0 0 1px #71c341,
+        0 0 3px #71c341,
+        0 0 5px #71c341,
+        0 0 11px #71c341;}
+.success-text {
+    font-size: clamp(0.9rem, 3.5cqi, 1rem);
+    margin: 0px 0px clamp(1.5rem, 6cqi, 1.875rem) 0px;
+    line-height: 1.5;
+    color: #555;}
+.success-button {
+    color: white;
+    border: 0;
+    background: #71c341;
+    width: 100%;
+    height: clamp(2.5rem, 10cqi, 3.4375rem);
+    border-radius: 8px;
+    font-size: clamp(1rem, 4cqi, 1.3rem);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1px 15px rgba(113, 195, 65, 0.1),
+                0 1px 15px rgba(113, 195, 65, 0.3),
+                0 1px 15px rgba(113, 195, 65, 0.5),
+                0 1px 15px rgba(113, 195, 65, 0.9);}
+.success-button:hover {
+    background: #82d352;
+    transform: translateY(-2px);
+    box-shadow: 0 1px 15px rgba(113, 195, 65, 0.1),
+                0 1px 15px rgba(113, 195, 65, 0.3),
+                0 1px 15px rgba(113, 195, 65, 0.5),
+                0 1px 15px rgba(113, 195, 65, 0.9);}
+.success-button:active {
+    background: #60a338;
+    transform: translateY(0)}
+.right form .button-area button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;}
+.right form .button-area button:disabled:hover {
+    color: #fff;
+    background: red;}
+#icon ul{
+    position: relative;}
+#icon ul li.contact-item .row > div:first-child{
+    position: relative;
+    width: fit-content;
+    margin: 0 clamp(0.5rem, 3cqi, 1.25rem);
+    cursor: pointer;}
+#icon ul li a .fas{
+    font-size: clamp(1.5rem, 5cqi, 2em);
+    color: #222;}
+#icon ul li.contact-item .row > div:first-child::before{
+    font-family: fontAwesome;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-size: clamp(1.5rem, 5cqi, 2em);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    z-index: 2;}
+#icon ul li.contact-item:nth-child(1) .row > div:first-child::before{
+    content: "\f501";
+    top: -1px;
+    left: clamp(0.25rem, 1cqi, 0.375rem);
+    color: #05D9FF;
+    border-bottom: 3px solid #05D9FF;
+    filter: 
+        drop-shadow(0 0 3px #05D9FF)
+        drop-shadow(0 0 11px #05D9FF)}
+#icon ul li.contact-item#map .row > div:first-child::before{
+    content: "\f5a0";
+    color: #25d366;
+    left: 0px;
+    border-bottom: 3px solid #25d366;
+    filter: 
+        drop-shadow(0 0 3px #25d366)
+        drop-shadow(0 0 11px #25d366)}
+#icon ul li.contact-item#mail .row > div:first-child::before{
+    content: "\f674";
+    color: #FF3131;
+    left: clamp(0.0625rem, 0.3cqi, 0.0625rem);
+    border-bottom: 3px solid #FF3131;
+    filter: 
+        drop-shadow(0 0 3px #FF3131)
+        drop-shadow(0 0 11px #FF3131)}
+#icon ul li.contact-item .row > div:first-child:hover::before{
+    height: 100%;}
+#icon ul li a{
+    text-decoration: none;}
+#mail {
+    position: relative;}
+#mail .copy-feedback {
+    position: absolute;
+    background: #71c341;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(113, 195, 65, 0.3);
+    z-index: 10;
+    white-space: nowrap;
+    animation: speechBubble 2s ease-in-out;
+    bottom: calc(100% - 22px);
+    left: 222px;
+    transform: none;}
+@keyframes speechBubble {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-30px);}
+    20% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);}
+    80% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);}
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-30px);}}
+#mail .copy-feedback::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #71c341;}
+.star-particles-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;}
+.star-particle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--star-size);
+    height: var(--star-size);
+    transform: 
+        translate(-50%, -50%)
+        translate(var(--star-dx), var(--star-dy))
+        rotate(45deg)
+        scale(var(--star-scale));
+    background-color: var(--star-color);
+    border-radius: 2px;
+    pointer-events: none;
+    opacity: var(--star-opacity);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    box-shadow: 
+        0 0 8px var(--star-color),
+        0 0 16px var(--star-color);
+    z-index: 1;}
+@container contact-section (width < 1250px) {
+    .contact .contact-content .text {
+        font-size: clamp(1.37rem, 3cqi, 1.37rem);}}
+@container contact-section (width < 800px) {
+    .contact {
+        padding: 3%;}
+    .contact .contact-content .row {
+        height: auto;
+        padding: clamp(0.75rem, 3cqi, 1rem) 0;}}
+@container contact-section (width < 666px) {
+    .contact .contact-content {
+        grid-template-columns: 1fr;
+        gap: clamp(0rem, 6cqi, 0rem);}
+    .contact .right form .fields {
+        grid-template-columns: 1fr;}}
+@container contact-section (width < 444px) {
+    .contact {
+        padding: 3%;}
+    .contact .contact-content .row .info {
+        margin-left: clamp(0.75rem, 3cqi, 1.25rem);}
+    .success-message {
+        width: 95%;
+        padding: clamp(1.5rem, 6cqi, 2rem);}}
+/* -------------------------------- CONTACT -------------------------------- */

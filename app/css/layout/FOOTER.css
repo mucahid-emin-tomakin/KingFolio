@@ -1,0 +1,47 @@
+/* -------------------------------- FOOTER -------------------------------- */
+footer{
+    font-family: 'Poppins', sans-serif;
+    background: url("/gif/Banner.gif") no-repeat center;
+    background-size: cover;
+    font-family: 'BlackChancery', sans-serif;
+    color: #fff;
+    padding: clamp(0.5rem, 3cqi, 0.625rem) clamp(1rem, 5cqi, 1.4375rem);
+    text-align: center;
+    container-type: inline-size;
+    container-name: footer-section;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;}
+footer div{
+    display: flex; 
+    justify-content: center;
+    padding: clamp(0.25rem, 1cqi, 0.1875rem);}
+footer div img{
+    position: relative;
+    top: clamp(0.5rem, 2cqi, 0.8125rem);
+    height: clamp(1rem, 4cqi, 1.4375rem);
+    width: auto;
+    sizes: 100vw;}
+.footer-list {
+    list-style: none;}
+.footer-list li{
+    display: inline;}
+#copyright{
+    position: relative;
+    top: clamp(0.25rem, 1cqi, 0.1875rem);}
+@container footer-section (width < 480px) {
+    footer div {
+        flex-direction: column;
+        gap: 0.5rem;}}
+@media (max-width: 445px){
+    footer{
+        padding: 10px 3px 16px;}
+    footer div{
+        font-size: 14px;}
+    footer div img{
+        top: 12px;}}
+@media (max-width: 600px) {
+        footer {
+            background-attachment: scroll;}}
+/* -------------------------------- FOOTER -------------------------------- */

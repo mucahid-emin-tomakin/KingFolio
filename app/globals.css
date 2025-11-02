@@ -1,0 +1,15 @@
+/* -------------------------------- imports -------------------------------- */
+    @import "@fortawesome/fontawesome-free/css/all.min.css";
+    @import "./css/style.css";
+    @import "./css/fonts.css";
+    @import "./css/layout/LOADER.css";
+    @import "./css/layout/SCROLLBAR.css";
+    @import "./css/layout/NAVBAR.css";
+    @import "./css/layout/FOOTER.css";
+    @import "./css/sections/HOME.css";
+    @import "./css/sections/ABOUT.css";
+    @import "./css/sections/PROJECTS.css";
+    @import "./css/sections/SKILLS.css";
+    @import "./css/sections/CAREER.css";
+    @import "./css/sections/CONTACT.css";
+/* -------------------------------- imports -------------------------------- */

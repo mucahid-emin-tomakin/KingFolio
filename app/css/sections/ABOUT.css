@@ -1,0 +1,432 @@
+/* -------------------------------- ABOUT -------------------------------- */
+.about {
+    container-type: inline-size;
+    container-name: about-section;}
+.about .title{
+    padding-bottom: 0;}
+.about .title::after{
+    content: "who am i";}
+.about .about-content .left .text{
+    font-size: clamp(1.4rem, 3cqi, 2rem);
+    font-weight: 600;
+    margin-bottom: clamp(0.5rem, 2cqi, 0.625rem);
+    padding-top: clamp(5%, 8cqi, 11%);}
+.about .about-content .left p{
+    text-align: justify;}
+.about .about-content .left .text span{
+    text-align: center;
+    color: #D40000;
+    font-weight: bold;}
+.about .about-content .right img{
+    shape-outside: url(/svg/Mask.svg);
+    shape-margin: min(20px, 3cqi);
+    margin-right: min(20px, 3cqi);
+    transition: 1s ease;
+    float: left;
+    height: auto;
+    width: min(39%, 444px);}
+.about .about-content .right img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;}
+.polygons{ 
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    animation: PolygonsAnimation 3s alternate infinite;
+    -webkit-mask-image: url(/svg/Mask.svg);
+    mask-image: url(/svg/Mask.svg);
+    -webkit-mask-position: bottom left fixed;
+    mask-position: bottom left fixed;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image-transform: rotate(90deg);
+    mask-image-transform: rotate(90deg);}
+@keyframes PolygonsAnimation{
+    25%{
+        clip-path: polygon(20% 0%, 100% 38%, 70% 90%, 0% 100%);}
+    50%{
+        clip-path: polygon(0 46%, 100% 15%, 55% 74%, 0 100%);}
+    75%{
+        clip-path: polygon(100% 38%, 100% 38%, 66% 100%, 0 53%);}}
+.img-down{
+    display: inline;
+    animation: zoom-in-zoom-out 2s ease infinite;}
+.img-top{
+    display: none;
+    animation: zoom-in-zoom-out 2s ease infinite;}
+@keyframes zoom-in-zoom-out{
+    0%{
+        transform: rotate(-0.1deg) scale(1, 1);}
+    50%{
+        transform: rotate(0.1deg) scale(0.97, 0.97);}
+    100%{
+        transform: rotate(-0.1deg) scale(1, 1);}}
+#downtop:hover .img-top{
+    display: inline;}
+#downtop:hover .img-down{
+    display: none;}
+.pdf-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95wv;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000 !important;}
+.cv-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    z-index: 9998;
+    animation: fadeIn 0.3s ease;}
+.cv-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+    overflow-y: auto;}
+.cv-popup {
+    position: relative;
+    padding: 11rem;
+    z-index: 10000;
+    animation: slideIn 0.4s cubic-bezier(.31,.25,.50,1.50);
+    width: 100%;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow: visible;}
+.cv-overlay.pdf-active {
+    padding: 0 !important;
+    align-items: center !important;
+    overflow: hidden !important;}
+.cv-popup.pdf-active {
+    padding: 0 !important;
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+    overflow: visible !important;}
+.cv-iframe {
+    width: 95vw;
+    height: 95vh;
+    border: none;
+    border-radius: 11px;
+    background: white;
+    z-index: 1}
+.cv-image-link {
+    cursor: pointer;
+    display: block;}
+@keyframes animateRainbowGlow {
+    0% {
+        background-position: 0% 50%;}
+    100% {
+        background-position: 100% 50%;}}
+.rainbowGlow::after {
+    filter: blur(66px);
+    opacity: 1;}
+.rainbowcard img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: block;
+    border-radius: 11px;
+    object-fit: contain;}
+.rotate-close-btn {
+    position: absolute !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    background: red !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3) !important;
+    z-index: 10003 !important;}
+.rotate-close-btn:hover {
+    background: darkred !important;
+    transform: scale(1.1) !important;}
+.rotate-prompt-container {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 3rem !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+    max-width: 300px !important;
+    animation: pulse 2s ease-in-out infinite !important;}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }}
+.rotate-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: rotate 3s ease-in-out infinite;}
+@keyframes rotate {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }}
+.rotate-arrow {
+    font-size: 2.5rem;
+    animation: bounce 1.5s ease-in-out infinite;}
+@keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }}
+.buttonNeon a{
+    position: relative;
+    display: inline-block;
+    padding: clamp(0.5rem, 2cqi, 0.625rem) clamp(1.5rem, 4cqi, 1.875rem);
+    margin: clamp(1rem, 3cqi, 2.5rem) 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: min(4px, 0.5cqi);
+    overflow: hidden;
+    margin-right: min(50px, 5cqi);
+    font-size: clamp(1rem, 3cqi, 1.25rem);
+    font-weight: 500;
+    margin-top: clamp(1rem, 2cqi, 1.25rem);
+    border-radius: 6px;}
+.buttonNeon a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);}
+#buttonNeon-II{
+    filter: hue-rotate(270deg);}
+#buttonNeon-III{
+    filter: hue-rotate(110deg);}
+.buttonNeon a span{
+    position: absolute;
+    display: block;}
+.buttonNeon a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;}
+@keyframes animate1{
+    0%{
+        left: -100%;}
+    50%, 100%{
+        left: 100%;}}
+.buttonNeon a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;}
+@keyframes animate2{
+    0%{
+        top: -100%;}
+    50%, 100%{ 
+        top: 100%;}}
+.buttonNeon a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;}
+@keyframes animate3{
+    0%{
+        right: -100%;}
+    50%, 100%{
+        right: 100%;}}
+.buttonNeon a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;}
+@keyframes animate4{
+    0%{
+        bottom: -100%;}
+    50%, 100%{
+        bottom: 100%;}}
+@container about-section (width < 1300px) {
+    .cv-popup {
+        padding: 8rem;}}
+@container about-section (width < 1100px) {
+    .cv-popup {
+        padding: 5rem;}}
+@container about-section (width < 880px) {
+    .cv-popup {
+        padding: 3rem;}}
+@container about-section (width < 770px) {
+    .cv-popup {
+        padding: 1rem;}}
+    .cv-content {
+        position: relative;
+        background: transparent;
+        width: 100%;
+        display: flex;
+        justify-content: center;}
+    .cv-image {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        border-radius: 12px;
+        object-fit: contain;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);}
+    .cv-close-btn {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background: red;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        z-index: 10001;}
+    .cv-close-btn:hover {
+        background: darkred;
+        transform: scale(1.1);}
+    .cv-content.rainbowcard {
+        width: 100%;
+        margin: 0 auto;}
+    .rainbowcard {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;}
+    .rainbowGlow::before, .rainbowGlow::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff8700,
+            #ffff00,
+            #25ff00,
+            #00ffe9,
+            #0032ff,
+            #9800ff,
+            #f200ff,
+            #ff0000); 
+        background-size: 400%;
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+        z-index: 0;
+        pointer-events: none;
+        animation: animateRainbowGlow 3s linear infinite;}
+@container about-section (width < 650px) {
+    .about .about-content .column {
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "text"
+            "description"
+            "button";
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        text-align: center;}
+    .about .about-content .right {
+        grid-area: image;
+        display: flex;
+        justify-content: center;
+        width: 100%;}
+    .about .about-content .right img {
+        width: auto;
+        height: 10%;
+        max-height: 333px;
+        float: center;
+        margin: 0 auto;
+        grid-area: image;}
+    .about .about-content .left {
+        width: 100%;
+        text-align: center;
+        grid-area: text;}
+    .about .about-content .left p {
+        width: 100%;
+        text-align: center;
+        grid-area: description;}
+    .about .about-content .buttonNeon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        grid-area: button;}}
+@container about-section (width < 500px) {
+    .about .about-content .right img {
+        width: auto;
+        height: 1%;
+        max-height: 222px;}}
+    .fade-bottom {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;}
+    .fade-bottom.active {
+        opacity: 1;
+        transform: translateY(0);}
+    .typing {
+        text-shadow: 
+            0 0 1px #ff073a,
+            0 0 3px #ff073a,
+            0 0 5px #ff073a,
+            0 0 11px #ff073a;
+        min-width: min(15ch, 20cqi);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;}
+    .typing::after {
+        text-shadow: 
+            0 0 1px #ff073a,
+            0 0 3px #ff073a,
+            0 0 5px #ff073a,
+            0 0 11px #ff073a;
+        content: "|";
+        animation: blink 0.7s infinite;}
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }}
+/* -------------------------------- ABOUT -------------------------------- */
