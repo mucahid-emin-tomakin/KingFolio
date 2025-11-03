@@ -124,6 +124,7 @@
     left: 0;
     transform: translateY(-50%);
     width: 100vw;
+    width: 100dvw;
     height: 102%;
     z-index: 3;
     pointer-events: none;

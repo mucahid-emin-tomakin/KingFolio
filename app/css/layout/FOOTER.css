@@ -22,7 +22,8 @@ footer div img{
     top: clamp(0.5rem, 2cqi, 0.8125rem);
     height: clamp(1rem, 4cqi, 1.4375rem);
     width: auto;
-    sizes: 100vw;}
+    sizes: 100vw;
+    sizes: 100dvw;}
 .footer-list {
     list-style: none;}
 .footer-list li{

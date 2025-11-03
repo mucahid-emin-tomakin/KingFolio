@@ -144,6 +144,7 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
+    min-height: 100dvh;
     display: block;
     border-radius: 11px;
     object-fit: contain;}
@@ -302,6 +303,7 @@
         width: 100%;
         height: auto;
         min-height: 100vh;
+        min-height: 100dvh;
         border-radius: 12px;
         object-fit: contain;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);}
