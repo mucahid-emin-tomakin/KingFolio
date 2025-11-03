@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 import withBundleAnalyzer from '@next/bundle-analyzer';
-import withPWA from 'next-pwa';
-const withPWAConfig = withPWA({
+const withPWA = require('next-pwa')({
   dest: 'public',
   register: true, 
   skipWaiting: true,
@@ -31,4 +30,4 @@ const nextConfig: NextConfig = {
     ]
   },
 };
-export default bundleAnalyzer(withPWAConfig(nextConfig));
+export default bundleAnalyzer(withPWA(nextConfig));
