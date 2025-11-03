@@ -6,6 +6,17 @@ export default function SCROLLBAR() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   useEffect(() => {
+    import('smoothscroll-polyfill').then((module) => {
+      module.polyfill();
+    });
+  }, []);
+  const smoothScrollTo = (position: number) => {
+    window.scrollTo({
+      top: position,
+      behavior: 'smooth'
+    });
+  };
+  useEffect(() => {
     sessionStorage.setItem('isRefreshing', 'true');
     const search = searchParams.toString();
     const routeKey = `scrollPos_${pathname}${search ? `?${search}` : ''}`;
@@ -13,7 +24,7 @@ export default function SCROLLBAR() {
     if (savedPosition && savedPosition !== '0') {
       const position = parseInt(savedPosition);
       const scrollInterval = setInterval(() => {
-        window.scrollTo(0, position);
+        smoothScrollTo(position);
       }, 50);
       setTimeout(() => {
         clearInterval(scrollInterval);
