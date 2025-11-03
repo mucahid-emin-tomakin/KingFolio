@@ -107,7 +107,7 @@ export function ABOUT() {
               </p>
             </div>
             <div className="buttonNeon reveal fade-left" style={{ textAlign: "center" }}>
-              <Link href="/cvpage" id="buttonNeon-II" onClick={handleCVClick}>
+              <Link href="#" id="buttonNeon-II" onClick={handleCVClick}>
                 <span></span><span></span><span></span><span></span>
                 <strong>Download CV</strong>
               </Link>
