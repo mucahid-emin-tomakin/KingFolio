@@ -68,6 +68,109 @@
     transform: translateX(3%);}
 .home .home-content .text-2 h5 {
     transform: translateX(12%);}
+.home-actions {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: clamp(1rem, 3cqi, 1.25rem);
+    justify-content: center;}
+.social-icons ul {
+    position: relative;
+    display: flex;
+    transform: rotate(-6deg) skew(6deg);
+    transform-style: preserve-3d;
+    gap: 0.5rem;}
+.social-icons ul li {
+    position: relative;
+    list-style: none;
+    width: 44px;
+    height: 44px;}/*
+.social-icons ul li:before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: -4px;
+    width: 100%;
+    height: 8px;
+    background: red;
+    transform-origin: top;
+    transform: skewX(-41deg);}
+.social-icons ul li:after{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -7px;
+    width: 7px;
+    height: 100%;
+    background: red;
+    transform-origin: right;
+    transform: skewY(-49deg);}*/
+.social-icons ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: clamp(1rem, 6cqi, 2rem) !important;
+    transition: 1.5s ease-out;}
+.social-icons ul li:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);}
+.social-icons ul li:hover span:nth-child(7){
+    transform: translate(18px, -18px);
+    opacity: 1;}
+.social-icons ul li:hover span:nth-child(6){
+    transform: translate(15px, -15px);
+    opacity: 0.8;}
+.social-icons ul li:hover span:nth-child(5){
+    transform: translate(12px, -12px);
+    opacity: 0.6;}
+.social-icons ul li:hover span:nth-child(4){
+    transform: translate(9px, -9px);
+    opacity: 0.4;}
+.social-icons ul li:hover span:nth-child(3){
+    transform: translate(6px, -6px);
+    opacity: 0.2;}
+.social-icons ul li:hover span:nth-child(2){
+    transform: translate(3px, -3px);
+    opacity: 0.1;}
+.social-icons ul li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: 0.05;}
+.social-icons ul li:nth-child(1):hover span{
+    background: linear-gradient(45deg, #000000, #0077b5, #00A0DC) !important;
+    box-shadow: 0 0 3px #000000, 0 0 6px #0077b5, 0 0 11px #00A0DC;}
+.social-icons ul li:nth-child(2):hover span{
+    background: linear-gradient(45deg, #000000, #6e5494, #ff12f6) !important;
+    box-shadow: 0 0 3px #000000, 0 0 6px #6e5494, 0 0 11px #ff12f6;}
+.social-icons ul li:nth-child(3):hover span{
+    background: linear-gradient(45deg, #000000, #47CF73) !important;
+    box-shadow: 0 0 3px #47CF73, 0 0 6px #47CF73, 0 0 11px #47CF73;}
+.social-icons ul li:nth-child(4):hover span{
+    background: linear-gradient(45deg, #000000, #1DA1F2, #657786) !important;
+    box-shadow: 0 0 3px #000000, 0 0 6px #1DA1F2, 0 0 11px #657786;}
+.social-icons ul li:nth-child(5):hover span{
+    background: linear-gradient(45deg, #000000, #1877F2, #3B5998) !important;
+    box-shadow: 0 0 3px #000000, 0 0 6px #1877F2, 0 0 11px #3B5998;}
+.social-icons ul li:nth-child(6):hover span{
+    background: linear-gradient(45deg, #ff7209, #f800ce, #ee000b) !important;
+    box-shadow: 0 0 3px #ff7209, 0 0 6px #f800ce, 0 0 11px #ee000b;}
+.social-icons ul li:nth-child(7):hover span{
+    background: linear-gradient(45deg, #000000, #69C9D0, #EE1D52) !important;
+    box-shadow: 0 0 3px #000000, 0 0 6px #69C9D0, 0 0 11px #EE1D52;}
+@container home-section (width < 750px) {
+    .home-actions {
+        gap: 2rem;}}
+@container home-section (width < 700px) {
+    .home-actions {
+        gap: 1rem;}}
 @container home-section (width < 600px) {
     .home .home-content .text-1{
         display: flex;
@@ -103,7 +206,11 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: 1rem;}}
+        margin-top: 1rem;}
+    .home-actions {
+        flex-direction: column;}
+    .social-icons ul {
+        transform: none;}}
 @container home-section (width < 550px) {
     .home .home-content .text-2 h3 {
         margin-right: min(35%);}
@@ -111,7 +218,9 @@
         margin-left: min(40%);}}
 @container home-section (width < 500px) {
     .home .home-content .text-2 h5 {
-        margin-left: min(45%);}}
+        margin-left: min(45%);}
+    .social-icons ul {
+        gap: 0.1rem;}}
 @container home-section (width < 450px) {
     .home .home-content .text-2 h5 {
         margin-left: min(50%);}}
