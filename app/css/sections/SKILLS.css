@@ -123,6 +123,11 @@
     display: inline;}
 #downtop:hover .img-down{
     display: none;}
+@media (prefers-reduced-motion: reduce) {
+    .img-down, .img-top {
+        animation: none;}
+@keyframes zoom-in-zoom-out {
+    transform: none;}}
 @container skills-section (width < 1300px) {
     .skills .skills-content .right{
         margin-top: 0%;}
@@ -161,6 +166,15 @@
     .skills .skills-content .leftleft img {
         margin-top: 11rem !important;
         margin-left: -7rem !important;}}
+@container skills-section (width < 950px) {
+    .skills .skills-content .column { width: 100%; }
+    .skills .skills-content .right{
+        padding: 0 5%; }
+    .skills .skills-content .left p { 
+        font-size: clamp(1rem, 3cqi, 1rem);
+        text-align: left;}
+    .skills .skills-content .leftleft img {
+        display: none !important;}}/*
 @container skills-section (width < 950px) {
     .skills .skills-content .column { width: 100%; }
     .skills .skills-content .right{
@@ -226,10 +240,5 @@
 @container skills-section (width < 330px) {
     .skills .skills-content .leftleft img {
         margin-top: 37rem !important;
-        margin-left: -3rem !important;}}
-@media (prefers-reduced-motion: reduce) {
-    .img-down, .img-top {
-        animation: none;}
-@keyframes zoom-in-zoom-out {
-    transform: none;}}
+        margin-left: -3rem !important;}}*/
 /* -------------------------------- SKILLS -------------------------------- */
