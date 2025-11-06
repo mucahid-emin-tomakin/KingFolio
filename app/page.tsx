@@ -24,6 +24,25 @@ export default function Page() {
     revealElements.forEach((el) => observer.observe(el));
     return () => revealElements.forEach((el) => observer.unobserve(el));
   }, []);
+  const sections = document.querySelectorAll("section");
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("section-active");
+          sections.forEach(section => {
+            if (section !== entry.target) {
+              section.classList.remove("section-active");
+            }
+          });
+        }
+      });
+    },
+    { 
+      threshold: 0.3,
+      rootMargin: "0px 0px -10% 0px"
+    }
+  );
   return (
     <>
       <HOME />
