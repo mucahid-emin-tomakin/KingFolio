@@ -17,6 +17,7 @@ export default function SCROLLBAR() {
     });
   };
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     sessionStorage.setItem('isRefreshing', 'true');
     const search = searchParams.toString();
     const routeKey = `scrollPos_${pathname}${search ? `?${search}` : ''}`;
@@ -38,6 +39,7 @@ export default function SCROLLBAR() {
     }
   }, [pathname, searchParams]);
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     let scrollTimeout: NodeJS.Timeout;
     let isInitialLoad = true;
     const handleScroll = () => {
