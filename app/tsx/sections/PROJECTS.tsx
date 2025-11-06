@@ -11,9 +11,16 @@ export function PROJECTS() {
   const appRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      if (document.querySelector('script[src="/js/scrollDist.js"]')) {
+        return;
+      }
       const script = document.createElement('script');
       script.src = '/js/scrollDist.js';
       script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        console.log('ScrollDist loaded');
+      };
       document.body.appendChild(script);
       return () => {
         if (document.body.contains(script)) {
