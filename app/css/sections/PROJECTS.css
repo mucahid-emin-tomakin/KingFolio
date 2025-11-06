@@ -82,6 +82,10 @@
 .projects.is-pinned .projects-animation-section {
     opacity: 1;}
 .projects-scroll-container{
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
     position: relative;
     overflow-y: visible;
     overflow-x: hidden;
@@ -94,6 +98,8 @@
     height: 100dvh;
     overflow-y: auto;}
 .projects-sticky-section{
+    transform: translateZ(0);
+    will-change: transform;
     min-height: auto;
     position: relative;
     transition: min-height 0.6s ease;}
@@ -199,6 +205,8 @@
     width: 100% !important;
     height: 100% !important;}
 #imgGroup img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
     border-radius: 22px;}
 .imgBox, .imgBox img, .image-caption, .image-wrapper {
     opacity: 1;}
