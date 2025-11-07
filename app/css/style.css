@@ -64,6 +64,9 @@ section {
 section {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);}
+body:has(.cv-overlay) section {
+    transform: none !important;
+    -webkit-transform: none !important;}
 section .title{
     position: relative;
     text-align: center;
