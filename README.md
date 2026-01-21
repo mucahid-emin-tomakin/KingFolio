@@ -63,7 +63,7 @@
 ## 🖼️ Screenshots
 
 ### Lighthouse
-![KingFolio Screenshot](/webp/KingFolio.webp)
+![KingFolio Screenshot](/public/webp/KingFolio.webp)
 
 ---
 
