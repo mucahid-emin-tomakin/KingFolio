@@ -63,7 +63,7 @@
 ## 🖼️ Screenshots
 
 ### Lighthouse
-![KingFolio Screenshot](/public/webp/KingFolio.webp)
+![KingFolio Screenshot](https://raw.githubusercontent.com/mucahid-emin-tomakin/KingFolio/refs/heads/main/public/webp/Kingfolio.webp)
 
 ---
 
