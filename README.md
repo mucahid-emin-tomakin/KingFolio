@@ -181,12 +181,6 @@ npm run test:coverage
 
 ## 🌐 HOSTEN
 
-### 🚀 Deployment mit Vercel
-
-* Stelle sicher, dass dein Repository auf GitHub verfügbar ist
-* Melde dich bei [Vercel](https://vercel.com/) an
-* Neues Projekt → GitHub Repository auswählen → Deploy
-
 ### 💻 Lokales Hosting
 ```bash
 # Development Server starten
@@ -199,18 +193,24 @@ npm run build  # → Optimierter Produktionsbuild
 npm start  # → Server starten, um den Produktionsbuild zu testen
 ```
 
+### 🚀 Deployment mit Vercel
+
+* Stelle sicher, dass dein Repository auf GitHub verfügbar ist
+* Melde dich bei [Vercel](https://vercel.com/) an
+* Neues Projekt → GitHub Repository auswählen → Deploy
+
 ---
 
 ## ⚠️ WICHTIGE HINWEISE
 
 ### 🔒 Sicherheit
-  Code vor der Ausführung prüfen
-  Backup erstellen vor großen Änderungen
-  Nicht auf Produktivsystemen ohne Testing verwenden
+- Code vor der Ausführung prüfen
+- Backup erstellen vor großen Änderungen
+- Nicht auf Produktivsystemen ohne Testing verwenden
 ### 💡 Empfehlungen
-  Testing in VM oder lokalem Testsystem
-  Eigene Anpassungen speichern & sichern
-  Funktionen verstehen, bevor geändert wird
+- Testing in VM oder lokalem Testsystem
+- Eigene Anpassungen speichern & sichern
+- Funktionen verstehen, bevor geändert wird
   
 ---
 
