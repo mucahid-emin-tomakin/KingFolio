@@ -62,13 +62,8 @@
 
 ## 🖼️ Screenshots
 
-### Loadingscreen
-### Home
-### About me
-### My Projects
-### My Skills
-### My Career Journey
-### Contact me
+### Lighthouse
+![KingFolio Screenshot](/webp/KingFolio.webp)
 
 ---
 
