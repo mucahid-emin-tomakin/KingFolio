@@ -69,55 +69,55 @@
 
 ## 📁 Struktur
 ```text
-KingFolio/
-├── app/
-│   ├── css/
-│   │   ├── FOOTER.css
-│   │   ├── LOADER.css
-│   │   ├── NAVBAR.css
-│   │   ├── SCROLLBAR.css
-│   │   ├── sections/
-│   │   │   ├── ABOUT.css
-│   │   │   ├── CAREER.css
-│   │   │   ├── CONTACT.css
-│   │   │   ├── HOME.css
-│   │   │   ├── PROJECTS.css
-│   │   │   └── SKILLS.css
-│   │   ├── fonts.css
-│   │   └── style.css
-│   ├── tsx/
-│   │   ├── layout/
-│   │   │   ├── FOOTER.tsx
-│   │   │   ├── LOADER.tsx
-│   │   │   ├── NAVBAR.tsx
-│   │   │   └── SCROLLBAR.tsx
-│   │   ├── sections/
-│   │   │   ├── ABOUT.tsx
-│   │   │   ├── CAREER.tsx
-│   │   │   ├── CONTACT.tsx
-│   │   │   ├── HOME.tsx
-│   │   │   ├── PROJECTS.tsx
-│   │   │   └── SKILLS.tsx
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   ├── not-found.tsx
-│   │   └── page.tsx
-│   ├── robots.ts
-│   └── sitemap.ts
-├── public/
-│   ├── gif/ html/ js/ pdf/ svg/ webm/ webp/ woff/ woff2/
-│   ├── apple-touch-icon.png
-│   ├── favicon-16x16.png
-│   ├── favicon-32x32.png
-│   ├── favicon-256x256.png
-│   ├── favicon.ico
-│   └── manifest.json
-├── eslint.config.mjs
-├── next-env.d.ts
-├── next.config.ts
-├── package-lock.json
-├── package.json
-└── tsconfig.json
+📦 KingFolio/
+├── 📂 app/
+│   ├── 🎨 css/
+│   │   ├── 👣 FOOTER.css
+│   │   ├── ⏳ LOADER.css
+│   │   ├── 🧭 NAVBAR.css
+│   │   ├── 🖱️ SCROLLBAR.css
+│   │   ├── 📦 sections/
+│   │   │   ├── 👤 ABOUT.css
+│   │   │   ├── 💼 CAREER.css
+│   │   │   ├── 📞 CONTACT.css
+│   │   │   ├── 🏠 HOME.css
+│   │   │   ├── 🚀 PROJECTS.css
+│   │   │   └── ⚡ SKILLS.css
+│   │   ├── 🔤 fonts.css
+│   │   └── 🎭 style.css
+│   ├── ⚛️ tsx/
+│   │   ├── 🧩 layout/
+│   │   │   ├── 👣 FOOTER.tsx
+│   │   │   ├── ⏳ LOADER.tsx
+│   │   │   ├── 🧭 NAVBAR.tsx
+│   │   │   └── 🖱️ SCROLLBAR.tsx
+│   │   ├── 📦 sections/
+│   │   │   ├── 👤 ABOUT.tsx
+│   │   │   ├── 💼 CAREER.tsx
+│   │   │   ├── 📞 CONTACT.tsx
+│   │   │   ├── 🏠 HOME.tsx
+│   │   │   ├── 🚀 PROJECTS.tsx
+│   │   │   └── ⚡ SKILLS.tsx
+│   │   ├── 🌍 globals.css
+│   │   ├── 🏗️ layout.tsx
+│   │   ├── ❌ not-found.tsx
+│   │   └── 📄 page.tsx
+│   ├── 🤖 robots.ts
+│   └── 🗺️ sitemap.ts
+├── 📂 public/
+│   ├── 📁 gif/ 📁 html/ 📁 js/ 📁 pdf/ 📁 svg/ 📁 webm/ 📁 webp/ 📁 woff/ 📁 woff2/
+│   ├── 🍏 apple-touch-icon.png
+│   ├── 📌 favicon-16x16.png
+│   ├── 📌 favicon-32x32.png
+│   ├── 📌 favicon-256x256.png
+│   ├── 📌 favicon.ico
+│   └── 📜 manifest.json
+├── 🔍 eslint.config.mjs
+├── 📄 next-env.d.ts
+├── ⚙️ next.config.ts
+├── 📦 package-lock.json
+├── 📦 package.json
+└── 📄 tsconfig.json
 ```
 
 ---
