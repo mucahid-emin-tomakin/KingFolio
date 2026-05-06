@@ -10,24 +10,24 @@
 
 ---
 
-## 📖 Inhaltsverzeichnis
+## 📖 INHALTSVERZEICHNIS
 
 - [📝 PROJEKTBESCHREIBUNG](#-projektbeschreibung)
-- [✨ Features](#-features)
-- [🖼️ Screenshots](#️-screenshots)
-- [📁 Struktur](#-struktur)
-- [🚀 Installation](#-installation)
-- [📦 Pakete](#-pakete)
-- [🧪 Testen](#-testen)
-- [🌐 Hosten](#-hosten)
-- [⚠️ Wichtige Hinweise](#-wichtige-hinweise)
-- [📝 Lizenz](#-lizenz)
-- [👤 Autor](#-autor)
-- [📊 Repository Statistik](#-repository-statistik)
+- [✨ FEATURES](#-features)
+- [🖼️ SCREENSHOTS](#️-screenshots)
+- [📁 STRUKTUR](#-struktur)
+- [🚀 INSTALLATION](#-installation)
+- [📦 PAKETE](#-pakete)
+- [🧪 TESTEN](#-testen)
+- [🌐 HOSTEN](#-hosten)
+- [⚠️ WICHTIGE HINWEISE](#-wichtige-hinweise)
+- [📝 LIZENZ](#-lizenz)
+- [👤 AUTOR](#-autor)
+- [📊 REPOSITORY STATISTIK](#-repository-statistik)
 
 ---
 
-## 📝 Projektbeschreibung
+## 📝 PROJEKTBESCHREIBUNG
 
 **KingFolio** ist mein persönliches Portfolio, das meine Arbeit als Entwickler ansprechend präsentiert. Es dient als zentrale Anlaufstelle, um Projekte, Fähigkeiten und berufliche Erfahrungen übersichtlich darzustellen. Die Website wurde mit modernen Webtechnologien entwickelt und ist konsequent auf Performance, Barrierefreiheit und ein elegantes Erscheinungsbild optimiert.
 
@@ -38,7 +38,7 @@
 
 ---
 
-## ✨ Features
+## ✨ FEATURES
 
 ### 🎨 Visuell & Theming
 
@@ -73,14 +73,14 @@
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ SCREENSHOTS
 
 ### Lighthouse
 ![KingFolio Screenshot](https://raw.githubusercontent.com/mucahid-emin-tomakin/KingFolio/refs/heads/main/public/webp/Kingfolio.webp)
 
 ---
 
-## 📁 Struktur
+## 📁 STRUKTUR
 ```text
 📦 KingFolio/
 ├── 📂 app/
@@ -164,7 +164,7 @@ npm list --depth=0
 
 ---
 
-## 🧪 Testen
+## 🧪 TESTEN
 
 ### 📊 Google Chrome Lighthouse
 
