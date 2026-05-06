@@ -12,6 +12,7 @@
 
 ## 📖 Inhaltsverzeichnis
 
+- [📝 PROJEKTBESCHREIBUNG](#-projektbeschreibung)
 - [✨ Features](#-features)
 - [🖼️ Screenshots](#️-screenshots)
 - [📁 Struktur](#-struktur)
@@ -23,6 +24,17 @@
 - [📝 Lizenz](#-lizenz)
 - [👤 Autor](#-autor)
 - [📊 Repository Statistik](#-repository-statistik)
+
+---
+
+## 📝 Projektbeschreibung
+
+**KingFolio** ist mein persönliches Portfolio, das meine Arbeit als Entwickler ansprechend präsentiert. Es dient als zentrale Anlaufstelle, um Projekte, Fähigkeiten und berufliche Erfahrungen übersichtlich darzustellen. Die Website wurde mit modernen Webtechnologien entwickelt und ist konsequent auf Performance, Barrierefreiheit und ein elegantes Erscheinungsbild optimiert.
+
+- **Zweck:** Persönliche Portfolio-Website zur Präsentation von Projekten und Fähigkeiten
+- **Technologien:** Next.js (App Router), React 18, TypeScript, CSS
+- **Hosting:** Vercel – schnell, global verteilt, automatische Deployments
+- **Design:** Responsive, animiert, thematisch abgestimmt auf einen königlichen Stil
 
 ---
 
